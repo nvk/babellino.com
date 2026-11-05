@@ -61,11 +61,6 @@ h1 em { font-weight: 400; }
 .reply { padding-top: 15px; margin-top: 14px; border-top: 1px solid #536052; }
 .reply p { color: #dce777; }
 .reply .speaker-label { color: #becbbb; }
-.screen-bottom { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 8px; color: #d1dbc7; }
-.wave { display: flex; align-items: center; gap: 2px; height: 14px; }
-.wave i { width: 2px; height: 5px; background: var(--accent); border-radius: 2px; }
-.wave i:nth-child(2n) { height: 10px; }
-.wave i:nth-child(3) { height: 14px; }
 .device-chin { height: 34px; display: flex; justify-content: center; align-items: center; position: relative; font-size: 9px; letter-spacing: -.3px; color: #606657; }
 .chin-dot { position: absolute; right: 13px; width: 3px; height: 3px; background: #668653; border-radius: 50%; }
 figcaption { text-align: center; font-size: 10px; line-height: 1.6; color: var(--muted); }
@@ -103,7 +98,7 @@ dd { margin: 8px 0 0; font-size: 14px; }
   h1 { font-size: 78px; }
   .hero .eyebrow { max-width: 300px; font-size: 10px; }
   .product-stage { height: 580px; }
-  .stage-word { font-size: 70px; right: 4px; }
+  .stage-word { display: none; }
   .intro { grid-template-columns: 1.2fr 1fr; gap: 32px; }
   .intro .section-label { grid-column: 1 / -1; max-width: 175px; }
   .how-bottom { gap: 30px; }
@@ -125,7 +120,6 @@ dd { margin: 8px 0 0; font-size: 14px; }
   .product-figure { max-width: 480px; width: 100%; justify-self: center; margin-top: 22px; }
   .product-stage { height: 565px; }
   .product-stage::before { inset: 30px 0 28px; }
-  .stage-word { right: 20px; top: 30px; }
   .device { width: 286px; }
   .screen { padding: 13px; }
   .intro { grid-template-columns: 1fr; padding-block: 32px 48px; gap: 28px; }

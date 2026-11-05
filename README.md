@@ -17,7 +17,8 @@ Open <http://127.0.0.1:8080>.
 ## Publishing
 
 GitHub Pages serves the repository root from `master`. `.nojekyll` keeps the
-site static. The intended custom domain is **babellino.com**.
+site static. The custom domain is **[babellino.com](https://babellino.com)**,
+declared in `CNAME`. GitHub Pages manages the TLS certificate; HTTPS is enforced.
 
 The device illustration and displayed conversation are conceptual, not a final
 hardware render, a live translator, or a statement of supported languages.
