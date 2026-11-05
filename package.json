@@ -1,0 +1,13 @@
+{
+  "name": "babellino-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Buildless Babellino landing page; dependencies are only for browser QA.",
+  "scripts": {
+    "test": "node tests/verify.cjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "playwright": "1.63.0"
+  }
+}

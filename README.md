@@ -1,0 +1,51 @@
+# Babellino
+
+The prelaunch website for **Babellino**, a self-contained AI live translation
+device with an 8-inch touchscreen and no internet requirement during use.
+
+## Development
+
+Buildless HTML and CSS. No runtime dependencies, third-party fonts, analytics,
+cookies, or external runtime requests.
+
+```sh
+python3 -m http.server 8080 --bind 127.0.0.1
+```
+
+Open <http://127.0.0.1:8080>.
+
+## Publishing
+
+GitHub Pages serves the repository root from `master`. `.nojekyll` keeps the
+site static. The intended custom domain is **babellino.com**.
+
+The device illustration and displayed conversation are conceptual, not a final
+hardware render, a live translator, or a statement of supported languages.
+The product is in development; final specifications, supported languages,
+pricing, and availability are not announced.
+
+## Content boundaries
+
+- Use **Babellino** as the product brand.
+- This repository is the website, not device firmware.
+- Do not publish internal source, provisioning details, private links, or credentials.
+- Do not add unverified latency, accuracy, language counts, battery life, certifications,
+  availability, pricing, or privacy guarantees.
+- Preserve keyboard navigation, reduced-motion support, and mobile layout.
+
+## Verification
+
+Test desktop and mobile layouts, local asset loading, anchor navigation, keyboard
+focus, accessibility, and the final GitHub Pages URL before reporting deployment.
+
+The GitHub Actions check runs Playwright and axe at 320, 390, 768, and 1440 pixels,
+and saves screenshots plus a report as a seven-day workflow artifact. For local QA:
+
+```sh
+npm ci --ignore-scripts
+npx playwright install chromium
+# Start the static server on port 8765 in another terminal.
+npm test
+```
+
+Browser QA dependencies are development-only. Publishing requires no npm build.
